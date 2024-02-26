@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  margin-bottom: 2vw;
+}
+a {
+  text-decoration: none;
+  margin-bottom: 1vw;
+  padding: 1vw 3vw;
+  text-align: center;
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+  padding: 2vw;
+  color: rgb(132, 0, 255);
+  font-size: 40px;
+}
+h3 {
+  font-size: 24px;
+}
+#inputText {
+  padding: 1vw 5vw;
+  border-radius: 20px;
+  background-color: rgb(213, 137, 243);
+  color: white;
+  font-size: 24px;
+}
+
+#inputText::placeholder {
+  color: rgb(253, 249, 249);
+}
+#language {
+  padding: 1vw 8vw;
+  border-radius: 20px;
+  background-color: rgb(208, 138, 236);
+  color: white;
+}
+#sortieren {
+  padding: 1vw 5vw;
+  border-radius: 20px;
+  background-color: rgb(212, 144, 239);
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 0.5vw;
+  margin: auto;
+
+  margin-bottom: 3vw;
+  padding-top: 3vw;
+}
+.button {
+  padding: 1vw 4vw;
+  border-radius: 20px;
+  background-color: rgb(212, 144, 239);
+  color: white;
+}
+
+.contentOutput {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+}
+.contentOutput article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(177, 132, 219);
+  border-radius: 20px;
+  opacity: 0.9;
+}

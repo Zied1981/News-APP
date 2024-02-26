@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>New APP</h1>
+      <form onsubmit="fetchNewsData(event)">
+        <div>
+          <label for="inputText">Suchbegriff</label>
+          <input
+            type="text"
+            placeholder="please give a content"
+            id="inputText"
+          />
+        </div>
+        <div class="errortext"></div>
+        <div>
+          <label for="language">Sprache</label>
+          <select id="language">
+            <option value="ar">arabisch</option>
+            <option value="de">deutsch</option>
+            <option value="en">english</option>
+            <option value="es">spanisch</option>
+            <option value="fr">französisch</option>
+            <option value="he">häbraisch</option>
+            <option value="it">italienisch</option>
+            <option value="nl">holländisch</option>
+            <option value="pt">portugisch</option>
+            <option value="ru">russisch</option>
+            <option value="sv">schwedisch</option>
+          </select>
+        </div>
+        <div>
+          <label for="sortieren">sortieren nach</label>
+          <select id="sortieren">
+            <option value="relevancy">popularität</option>
+            <option value="popularity">relevanz</option>
+            <option value="publishedAt">publiziert</option>
+          </select>
+        </div>
+
+        <input type="submit" value="suchen" class="button" />
+      </form>
+
+      <div class="contentOutput"></div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
