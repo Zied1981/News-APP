@@ -1,0 +1,2 @@
+api_key = 74d16d926146498b9f2453203d57af5e
+https://newsapi.org/v2/everything?q=Apple&from=2024-02-26&sortBy=popularity&apiKey=74d16d926146498b9f2453203d57af5e

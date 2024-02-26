@@ -8,19 +8,18 @@
   </head>
   <body>
     <main>
-      <h1>New APP</h1>
+      <h1>News APP</h1>
       <form onsubmit="fetchNewsData(event)">
         <div>
-          <label for="inputText">Suchbegriff</label>
           <input
             type="text"
             placeholder="please give a content"
             id="inputText"
           />
         </div>
+
         <div class="errortext"></div>
         <div>
-          <label for="language">Sprache</label>
           <select id="language">
             <option value="ar">arabisch</option>
             <option value="de">deutsch</option>
@@ -36,7 +35,6 @@
           </select>
         </div>
         <div>
-          <label for="sortieren">sortieren nach</label>
           <select id="sortieren">
             <option value="relevancy">popularität</option>
             <option value="popularity">relevanz</option>

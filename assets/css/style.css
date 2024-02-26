@@ -7,10 +7,21 @@ img {
   max-width: 100%;
   margin-bottom: 2vw;
 }
+body {
+  min-height: 100vh;
+}
+html {
+  background: url(../img/1.webp) center no-repeat;
+  background-size: cover;
+}
+main {
+  width: 1200px;
+  margin: auto;
+}
 a {
   text-decoration: none;
   margin-bottom: 1vw;
-  padding: 1vw 3vw;
+  padding: 1vw 9vw;
   text-align: center;
   background-color: aquamarine;
   border-radius: 20px;
@@ -18,53 +29,48 @@ a {
 h1 {
   text-align: center;
   padding: 2vw;
-  color: rgb(132, 0, 255);
-  font-size: 40px;
+  color: rgb(255, 255, 0);
+  font-size: 70px;
+  text-shadow: 5px 5px 5px white;
 }
 h3 {
   font-size: 24px;
 }
-#inputText {
-  padding: 1vw 5vw;
-  border-radius: 20px;
-  background-color: rgb(213, 137, 243);
-  color: white;
+#inputText,
+#language,
+#sortieren {
+  padding: 1.5vw 6vw;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 0, 0.699);
+
+  font-weight: 800;
   font-size: 24px;
+  color: rgb(28, 34, 228);
+  width: 400px;
+  text-align: center;
 }
 
 #inputText::placeholder {
-  color: rgb(253, 249, 249);
-}
-#language {
-  padding: 1vw 8vw;
-  border-radius: 20px;
-  background-color: rgb(208, 138, 236);
-  color: white;
-}
-#sortieren {
-  padding: 1vw 5vw;
-  border-radius: 20px;
-  background-color: rgb(212, 144, 239);
-  color: white;
+  color: rgb(28, 34, 228);
+  font-size: 24px;
 }
 
 form {
   display: flex;
   justify-content: center;
   align-items: center;
-
   flex-direction: column;
-  gap: 0.5vw;
+  gap: 1vw;
   margin: auto;
-
   margin-bottom: 3vw;
   padding-top: 3vw;
 }
 .button {
-  padding: 1vw 4vw;
   border-radius: 20px;
-  background-color: rgb(212, 144, 239);
+  background-color: rgba(16, 47, 149, 0.783);
   color: white;
+  font-size: 24px;
+  padding: 1vw 5vw;
 }
 
 .contentOutput {
@@ -78,7 +84,19 @@ form {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(177, 132, 219);
+  background-color: rgba(235, 242, 48, 0.693);
   border-radius: 20px;
-  opacity: 0.9;
+
+  box-shadow: 5px 10px 5px rgb(255, 254, 254);
+}
+.errortext {
+  padding: 1.5vw 6vw;
+  border-radius: 30px;
+  background-color: rgba(255, 13, 0, 0.699);
+  color: rgb(252, 251, 251);
+  font-weight: 800;
+  display: none;
+  width: 400px;
+  text-align: center;
+  font-size: 24px;
 }

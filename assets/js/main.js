@@ -14,7 +14,8 @@ const fetchNewsData = (event) => {
   console.log(inputText);
   if (inputText.length <= 0) {
     console.log("error");
-    outputText.innerHTML = `<p>please enter a content<p>`;
+    outputText.innerHTML = `<p>please enter a content!!!<p>`;
+    outputText.style.display = "block";
     return;
   }
   let selectedlang = document.querySelector("#language").value;
