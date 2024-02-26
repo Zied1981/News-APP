@@ -48,9 +48,9 @@ const fetchNewsData = (event) => {
 
         contentOutput.innerHTML += `<article>
         <h3>${title}</h3>
-        <p>${articleContent}</p>
+        <p class="articont">${articleContent}</p>
         <img src="${urlImG}" alt="">
-        <a href="${moreInfoBTn}"target="_blank">zum artikel</a>
+        <a href="${moreInfoBTn}"target="_blank">see more</a>
         </article>`;
       });
     })

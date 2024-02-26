@@ -5,53 +5,60 @@
 }
 img {
   max-width: 100%;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
+  border-radius: 20px;
 }
 body {
   min-height: 100vh;
 }
 html {
-  background: url(../img/1.webp) center no-repeat;
+  /*   background: url(../img/1.webp) center no-repeat; */
   background-size: cover;
+  background-color: rgba(113, 91, 91, 0.631);
 }
 main {
-  width: 1200px;
   margin: auto;
+  max-width: 90%;
 }
 a {
   text-decoration: none;
   margin-bottom: 1vw;
   padding: 1vw 9vw;
   text-align: center;
-  background-color: aquamarine;
+  background-color: rgba(17, 22, 143, 0.718);
   border-radius: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  color: white;
 }
 h1 {
   text-align: center;
   padding: 2vw;
-  color: rgb(255, 255, 0);
+  color: white;
   font-size: 70px;
   text-shadow: 5px 5px 5px white;
 }
 h3 {
   font-size: 24px;
+  margin-bottom: 1vw;
+  color: rgba(17, 22, 143, 0.718);
 }
 #inputText,
 #language,
 #sortieren {
-  padding: 1.5vw 6vw;
+  padding: 1vw 6vw;
   border-radius: 30px;
-  background-color: rgba(255, 255, 0, 0.699);
+  background-color: white;
 
   font-weight: 800;
   font-size: 24px;
-  color: rgb(28, 34, 228);
-  width: 400px;
+  color: rgba(17, 22, 143, 0.718);
+  width: 40vw;
   text-align: center;
 }
 
 #inputText::placeholder {
-  color: rgb(28, 34, 228);
+  color: rgba(17, 22, 143, 0.718);
   font-size: 24px;
 }
 
@@ -67,7 +74,7 @@ form {
 }
 .button {
   border-radius: 20px;
-  background-color: rgba(16, 47, 149, 0.783);
+  background-color: rgba(17, 22, 143, 0.718);
   color: white;
   font-size: 24px;
   padding: 1vw 5vw;
@@ -77,6 +84,12 @@ form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2vw;
+  margin: auto;
+}
+.articont {
+  margin-bottom: 2vw;
+  font-size: 16px;
+  text-align: center;
 }
 .contentOutput article {
   display: flex;
@@ -84,19 +97,19 @@ form {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(235, 242, 48, 0.693);
+  background-color: rgba(255, 255, 255, 0.927);
   border-radius: 20px;
-
-  box-shadow: 5px 10px 5px rgb(255, 254, 254);
+  padding: 2vw 2vw;
+  margin: auto;
 }
 .errortext {
-  padding: 1.5vw 6vw;
+  padding: 1vw 6vw;
   border-radius: 30px;
-  background-color: rgba(255, 13, 0, 0.699);
+  background-color: rgba(250, 69, 60, 0.842);
   color: rgb(252, 251, 251);
-  font-weight: 800;
+  font-weight: 600;
   display: none;
-  width: 400px;
+  width: 40vw;
   text-align: center;
   font-size: 24px;
 }
